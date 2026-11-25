@@ -7,20 +7,22 @@ def get_spel():
     return spel
 
 
-def get_shopping_list():
-    shopping_list = [" salt godis","choklad", "chips"]
+def get_godis():
+    godis = [" salt godis","choklad", "chips"]
 
-    shopping_list.append("lakris")
-    shopping_list.append( "sura godisar")
+    godis.append("lakris")
+    godis.append( "sura godisar")
 
-    shopping_list.insert(1,"söta godisar")
+    godis.insert(1,"söta godisar")
 
-    shopping_list.remove( " salt godis")
+    godis.remove( " salt godis")
 
-    removed_item = shopping_list.pop(2)
+    removed_item = godis.pop(2)
 
     print("Borttagen vara:",removed_item)
 
-    return shopping_list
+    return godis
 
-print(get_shopping_list())
+print(get_godis())
+print(get_film())
+print(get_spel())
