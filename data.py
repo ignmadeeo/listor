@@ -23,6 +23,3 @@ def get_godis():
 
     return godis
 
-print(get_godis())
-print(get_film())
-print(get_spel())
