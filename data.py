@@ -23,3 +23,6 @@ def get_godis():
 
     return godis
 
+def get_scores():
+    scores = [20, 45, 60, 30, 80, 55, 90, 40]
+    return scores
