@@ -1,4 +1,6 @@
 import data
+import show
+import random
 
 filmer = data.get_film()
 for film in filmer:
@@ -39,3 +41,16 @@ print("Medeltemperatur:", average)
 for temperature in temperatures:
     if temperature > average:
         print(temperature)
+
+scores = data.collect_scores()
+print("Alla resultat:", scores)
+print("Högsta resultat:", max(scores))
+print("Lägsta resultat:", min(scores))
+print("Medelvärde:", sum(scores) / len(scores))
+
+temperatures = data.get_temperatures()
+show.show_temperatures(temperatures)
+
+events = data.get_events()
+event = random.choice(events)
+print("Händelse:", event)

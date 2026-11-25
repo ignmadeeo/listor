@@ -30,3 +30,15 @@ def get_scores():
 def get_temperatures():
     temperatures = [12, 15, 18, 14, 11, 20, 16]
     return temperatures
+
+def collect_scores():
+    scores = []
+
+    for i in range(5):
+        score = int(input("Skriv ett spelresultat: "))
+        scores.append(score)
+    return scores
+
+def get_events():
+    events = ["hittade en skatt", "träffade en vän", "hittade en nyckel", "såg ett slott", "hittade en karta"]
+    return events
