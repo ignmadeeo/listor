@@ -28,3 +28,14 @@ print("Ursprunglig lista:", values)
 
 print(data.get_spel())
 print(data.get_godis())
+
+temperatures = data.get_temperatures()
+print("Antal temperaturer:", len(temperatures))
+print("Högsta temperatur:", max(temperatures))
+print("Lägsta temperatur:", min(temperatures))
+average = sum(temperatures) / len(temperatures)
+print("Medeltemperatur:", average)
+
+for temperature in temperatures:
+    if temperature > average:
+        print(temperature)

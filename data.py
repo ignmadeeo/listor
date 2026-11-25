@@ -26,3 +26,7 @@ def get_godis():
 def get_scores():
     scores = [20, 45, 60, 30, 80, 55, 90, 40]
     return scores
+
+def get_temperatures():
+    temperatures = [12, 15, 18, 14, 11, 20, 16]
+    return temperatures
